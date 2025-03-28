@@ -1,0 +1,45 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .MuiCard-root {
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .MuiCard-root:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+  
+  .MuiCardMedia-root {
+    filter: brightness(90%);
+    transition: filter 0.3s ease-in-out;
+  }
+  
+  .MuiCard-root:hover .MuiCardMedia-root {
+    filter: brightness(100%);
+  }
+  
+  .MuiTypography-root {
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  @media (max-width: 600px) {
+    .container {
+      grid-template-columns: 1fr;
+    }
+  }
+  

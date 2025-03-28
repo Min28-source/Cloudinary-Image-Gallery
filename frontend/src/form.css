@@ -1,0 +1,52 @@
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 450px;
+    margin: auto;
+    margin-top: 50px;
+    padding: 30px;
+    border-radius: 15px;
+    background: #282c34;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-title {
+    text-align: center;
+    font-size: 24px;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+  }
+  
+  .input-field {
+    background: #fff;
+    border-radius: 5px;
+  }
+  
+  .file-input {
+    color: #fff;
+    font-size: 16px;
+  }
+
+  .file-input:hover{
+    cursor: pointer;
+  }
+  
+  .submit-button {
+    background-color: #61dafb !important;
+    color: #282c34 !important;
+    font-weight: bold !important;
+    transition: all 0.3s ease-in-out !important;
+  }
+  
+  .submit-button:hover {
+    background-color: #4fa3d1 !important;
+  }
+  
+  @media (max-width: 600px) {
+    .form-container {
+      width: 90%;
+      padding: 20px;
+    }
+  }
+  
